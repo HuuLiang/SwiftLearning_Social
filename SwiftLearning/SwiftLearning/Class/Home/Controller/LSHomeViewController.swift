@@ -10,14 +10,21 @@ import UIKit
 
 class LSHomeViewController: LSBaseViewController {
     
+    
+    var dataSource = Array<Any>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        LSReqManager.sharedManager.fetchHomeData(handler: { (Success:Bool, resp:Any?) in
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }

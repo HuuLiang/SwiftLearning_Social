@@ -1,12 +1,24 @@
 PODS:
+  - Alamofire (4.5.1)
+  - HandyJSON (1.8.0)
+  - PermissionScope (1.1.1)
+  - Reflection (0.14.3)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - HandyJSON
+  - PermissionScope
+  - Reflection
   - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  HandyJSON: edaaa3278bf4c4c96d6f7382b80d6b91c88d3bf5
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  Reflection: 93327e50981227ac33c18274fcbaed33b1127811
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 101a36aa9ae748407b5e52e03819972a926706a4
+PODFILE CHECKSUM: 23106105922ee65be02651e4268a38be3103d929
 
 COCOAPODS: 1.2.1

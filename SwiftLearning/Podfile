@@ -7,6 +7,10 @@ target 'SwiftLearning' do
 
   pod 'SnapKit'
   pod 'PermissionScope'
-  
-  
+  pod 'Alamofire'
+  pod 'Reflection'
+  pod 'HandyJSON'
+
+#  pod 'SwiftyJSON'
+
 end

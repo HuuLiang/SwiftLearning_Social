@@ -15,6 +15,10 @@
 		EC2721F91D36445A00177615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2721F71D36445A00177615 /* LaunchScreen.storyboard */; };
 		EC8681CC1F676ED400B4C22D /* UIImage_gradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8681CB1F676ED400B4C22D /* UIImage_gradientColor.swift */; };
 		EC8681D41F67DDC200B4C22D /* LSCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8681D31F67DDC200B4C22D /* LSCommons.swift */; };
+		EC8A0BA81F691F8900AAB9F6 /* QBReqManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0BA71F691F8900AAB9F6 /* QBReqManager.swift */; };
+		EC8A0BAB1F69331400AAB9F6 /* LSReqManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0BAA1F69331400AAB9F6 /* LSReqManager.swift */; };
+		EC8A0BAF1F6936F200AAB9F6 /* QBHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A0BAE1F6936F200AAB9F6 /* QBHomeResponse.swift */; };
+		EC989A661F68D4AB00746DD5 /* LSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC989A651F68D4AB00746DD5 /* LSConfig.swift */; };
 		ECF211551F666CC60041AA1B /* LSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF211541F666CC60041AA1B /* LSBaseViewController.swift */; };
 		ECF211571F66763E0041AA1B /* LSTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF211561F66763E0041AA1B /* LSTabBarViewController.swift */; };
 		ECF2115D1F6676940041AA1B /* LSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF2115C1F6676940041AA1B /* LSHomeViewController.swift */; };
@@ -38,6 +42,10 @@
 		EC2721FA1D36445A00177615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8681CB1F676ED400B4C22D /* UIImage_gradientColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage_gradientColor.swift; sourceTree = "<group>"; };
 		EC8681D31F67DDC200B4C22D /* LSCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCommons.swift; sourceTree = "<group>"; };
+		EC8A0BA71F691F8900AAB9F6 /* QBReqManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBReqManager.swift; sourceTree = "<group>"; };
+		EC8A0BAA1F69331400AAB9F6 /* LSReqManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSReqManager.swift; sourceTree = "<group>"; };
+		EC8A0BAE1F6936F200AAB9F6 /* QBHomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBHomeResponse.swift; sourceTree = "<group>"; };
+		EC989A651F68D4AB00746DD5 /* LSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSConfig.swift; sourceTree = "<group>"; };
 		ECF211541F666CC60041AA1B /* LSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseViewController.swift; sourceTree = "<group>"; };
 		ECF211561F66763E0041AA1B /* LSTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTabBarViewController.swift; sourceTree = "<group>"; };
 		ECF2115C1F6676940041AA1B /* LSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 				EC2721EE1D36445A00177615 /* AppDelegate.swift */,
 				EC2721F01D36445A00177615 /* ViewController.swift */,
 				EC8681D31F67DDC200B4C22D /* LSCommons.swift */,
+				EC989A651F68D4AB00746DD5 /* LSConfig.swift */,
 				ECF2114D1F666B620041AA1B /* Resources */,
 				ECF2114E1F666BDF0041AA1B /* Class */,
 			);
@@ -114,8 +123,17 @@
 		EC8681D51F67EEC400B4C22D /* QBTools */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A0BA71F691F8900AAB9F6 /* QBReqManager.swift */,
 			);
 			path = QBTools;
+			sourceTree = "<group>";
+		};
+		EC8A0BA91F6932D500AAB9F6 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A0BAA1F69331400AAB9F6 /* LSReqManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		ECF2114D1F666B620041AA1B /* Resources */ = {
@@ -176,6 +194,7 @@
 		ECF211531F666C7D0041AA1B /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A0BA91F6932D500AAB9F6 /* DataManager */,
 				ECF211721F6680110041AA1B /* Extensions */,
 			);
 			path = Util;
@@ -202,6 +221,7 @@
 		ECF2115A1F66766D0041AA1B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A0BAE1F6936F200AAB9F6 /* QBHomeResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,7 +375,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = XAU5526EX2;
 						DevelopmentTeamName = "Neijiang Fenghuang Enterprise (Group) Co., Ltd.";
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -445,15 +465,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF2115D1F6676940041AA1B /* LSHomeViewController.swift in Sources */,
+				EC8A0BAB1F69331400AAB9F6 /* LSReqManager.swift in Sources */,
 				EC8681D41F67DDC200B4C22D /* LSCommons.swift in Sources */,
 				ECF211781F6690E20041AA1B /* UIColor_hexColor.swift in Sources */,
 				ECF211551F666CC60041AA1B /* LSBaseViewController.swift in Sources */,
 				ECF211571F66763E0041AA1B /* LSTabBarViewController.swift in Sources */,
 				EC8681CC1F676ED400B4C22D /* UIImage_gradientColor.swift in Sources */,
+				EC989A661F68D4AB00746DD5 /* LSConfig.swift in Sources */,
 				EC2721F11D36445A00177615 /* ViewController.swift in Sources */,
+				EC8A0BAF1F6936F200AAB9F6 /* QBHomeResponse.swift in Sources */,
 				ECF211711F667DC00041AA1B /* LSMineViewController.swift in Sources */,
 				ECF2117A1F669B6A0041AA1B /* LSNavigationController.swift in Sources */,
 				ECF2116F1F667DB20041AA1B /* LSContactViewController.swift in Sources */,
+				EC8A0BA81F691F8900AAB9F6 /* QBReqManager.swift in Sources */,
 				ECF211631F667C9B0041AA1B /* LSDiscoverViewController.swift in Sources */,
 				EC2721EF1D36445A00177615 /* AppDelegate.swift in Sources */,
 			);
@@ -575,6 +599,7 @@
 			baseConfigurationReference = DEC2A764469B45E5842E6D8C /* Pods-SwiftLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XAU5526EX2;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -582,6 +607,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSNAPKIT_DEPLOYMENT_LEGACY";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftLearning.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -591,6 +618,7 @@
 			baseConfigurationReference = 5C7C49BFE19B70D82F7BB700 /* Pods-SwiftLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XAU5526EX2;
 				INFOPLIST_FILE = SwiftLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -598,6 +626,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSNAPKIT_DEPLOYMENT_LEGACY";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftLearning.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
